@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Gojek</string>
+
+    <string name="retry">Retry</string>
+    <string name="error_message">Something went wrong at our end!</string>
+    <string name="format_degree">%d\u00B0</string>
+    <string name="format_celsius">%d C</string>
+</resources>

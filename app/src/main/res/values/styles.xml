@@ -1,0 +1,42 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textViewStyle">@style/AppTheme.DefaultTextView</item>
+        <item name="android:buttonStyle">@style/AppTheme.Button</item>
+    </style>
+
+    <style name="AppTheme.DefaultTextView" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/text_regular</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="AppTheme.PlaceText" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">sans-serif-thin</item>
+        <item name="android:textSize">@dimen/text_place</item>
+        <item name="android:textColor">@color/purple</item>
+    </style>
+
+    <style name="AppTheme.TempText" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">sans-serif-black</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_temp</item>
+    </style>
+
+    <style name="AppTheme.ErrorText" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">sans-serif-thin</item>
+        <item name="android:textSize">@dimen/text_error_message</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="AppTheme.Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:background">@color/grey</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+</resources>
