@@ -5,4 +5,7 @@
     <string name="error_message">Something went wrong at our end!</string>
     <string name="format_degree">%d\u00B0</string>
     <string name="format_celsius">%d C</string>
+    <string name="permission_location_rationale">This application needs location permission.
+        Please provide the permission.</string>
+    <string name="default_location_message">Fetching data for default location.</string>
 </resources>

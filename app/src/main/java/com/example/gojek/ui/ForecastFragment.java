@@ -4,11 +4,13 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 
 import com.example.gojek.R;
 import com.example.gojek.api.model.Forecast;
 import com.example.gojek.api.model.ForecastDay;
 import com.example.gojek.ui.adapter.ForecastAdapter;
+import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 
 import java.util.List;
@@ -71,6 +73,18 @@ public class ForecastFragment extends BottomSheetDialogFragment {
         rvForecast.addItemDecoration(new DividerItemDecoration(getContext(), DividerItemDecoration.VERTICAL));
 
         return rootView;
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        view.getViewTreeObserver().addOnGlobalLayoutListener(() -> {
+            BottomSheetDialog dialog = (BottomSheetDialog) getDialog();
+
+            if (dialog != null && dialog.getWindow() != null) {
+                dialog.getWindow().clearFlags(WindowManager.LayoutParams.FLAG_DIM_BEHIND);
+            }
+        });
     }
 
     @Override
